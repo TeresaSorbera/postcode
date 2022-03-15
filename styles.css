@@ -22,17 +22,24 @@
     color: #155724;
     background: #d4edda;
 }
+
+.postcode-form {
+    width: 100%;
+    display: inline;
+}
+
 .form-control {
     display: flex;
     justify-content: center;
     position: relative;
+    width: 90%;
+    margin: 0 auto; 
 }
 
 #postcode {
     height: 1.25rem;
     position: absolute;
     top: 1rem;
-    left: 10rem;
 }
 
 .submit-btn {
@@ -46,8 +53,8 @@
     visibility: hidden;
 }
 
-.postcode-form {
-    
+.alert-hidden {
+    visibility: hidden;
 }
 
 .alert-transform {

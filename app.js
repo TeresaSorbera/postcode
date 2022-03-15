@@ -2,62 +2,11 @@ const submitBtn = document.querySelector('.submit-btn');
 const buttonContainer = document.querySelector('.button-container');
 const alert = document.querySelector('.alert');
 // for getting value
-const postcode = document.getElementById('postcode');
+let postcode = document.getElementById('postcode');
 // for submitting the form
 const form = document.querySelector('.postcode-form');
 
-const postcodeArray = ['2500', '4600', '3400', '2100', '2800', '3000', '4000', '4100'];
-// console.log(postcodeArray);
-// for(let i = 0; i <postcodeArray.length; i++) {
-//     console.log(postcodeArray[i]);
-// }
-
 form.addEventListener('submit', validatePostalCode);
-
-// function getPostcode(e) {
-//     e.preventDefault();
-//     const value = postcode.value;
-//     console.log(value);
-//     for(let i = 0; i <postcodeArray.length; i++) {
-//         console.log(postcodeArray[i]);
-//         if(value === postcodeArray[i]) {
-//             displayAlert('you are premium', 'success');
-//             console.log('good');
-//             break;
-//         }
-//         else if(!value) {
-//             alert.classList.remove('alert-success');
-//             displayAlert('please enter a valid postcode', 'danger');
-//             break;
-//         }
-//         else {
-//             getRange(value);
-//         }
-//     }
-// }
-
-// // const success = 'you are premium', 'success';
-//  function getRange(value) {
-//     if(value >=1050 && value <=1466 ) {
-//         displayAlert('you are premium', 'success');
-//     }
-//     else if(value >=1550 && value <=2000 ) {
-//         displayAlert('you are premium', 'success');
-//     }
-//     else if(value >=8000 && value <=8220 ) {
-//         displayAlert('you are premium', 'success');
-//     }
-//     else {
-//         alert.classList.remove('alert-success');
-//         displayAlert('You are not premium', 'danger');
-//     }
-//  }
-
-//  function displayAlert(text, action) {
-//     alert.innerHTML = text;
-//     alert.classList.add(`alert-${action}`);
-// }
-
 
 function validatePostalCode(e){
     e.preventDefault();
@@ -66,7 +15,7 @@ function validatePostalCode(e){
     var postcode = document.getElementById("postcode").value;
 
     if( regExp.test( postcode ) ){
-        timeInterval;
+        showHideClassesSuccess();
     }
     else if(postcode >=1050 && postcode <=1466 ) {
         showHideClassesSuccess();
@@ -93,12 +42,12 @@ function validatePostalCode(e){
     alert.classList.add(`alert-${action}`);
 }
 
-let timeInterval = setInterval(showHideClassesSuccess, 3000);
 function showHideClassesSuccess() {
     displayAlert('you are premium', 'success');
     submitBtn.classList.add('hide-container');
     alert.classList.remove('alert');
     alert.classList.add('alert-transform');
+    hideAlert();
 }
 
 function showHideClassesFailure() {
@@ -106,4 +55,18 @@ function showHideClassesFailure() {
     submitBtn.classList.remove('hide-container');
     alert.classList.remove('alert-transform');
     alert.classList.add('alert');
+}
+
+function hideAlert() {
+    setTimeout(function() {
+        alert.classList.add('alert-hidden');
+        form.reset();
+        submitBtn.classList.remove('hide-container');
+        showAlert();
+    }, 3000);
+}
+
+function showAlert() {
+    alert.classList.remove('alert-hidden', 'alert-transform', 'alert-success', 'alert-danger');
+    alert.innerHTML = "";
 }
