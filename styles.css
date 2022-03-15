@@ -1,0 +1,64 @@
+.section-center {
+    padding: 2rem;
+}
+.alert {
+    padding: 0.5rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    text-transform: capitalize;
+    color: white;
+    position: absolute;
+    top: 3rem;
+}
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+.form-control {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#postcode {
+    height: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    left: 10rem;
+}
+
+.submit-btn {
+    position: absolute;
+    top: 1rem;
+    left: 20rem;
+    height: 1.6rem;
+}
+
+.hide-container {
+    visibility: hidden;
+}
+
+.postcode-form {
+    
+}
+
+.alert-transform {
+    position: absolute;
+    top: 0.2rem;
+    left: 20rem;
+    display: grid;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100px;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+}
