@@ -1,71 +1,78 @@
 .section-center {
-    padding: 2rem;
+  padding: 2rem;
+  height: 200px;
 }
 .alert {
-    padding: 0.5rem;
-    height: 1.25rem;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    font-size: 0.9rem;
-    border-radius: 0.25rem;
-    text-transform: capitalize;
-    color: white;
-    position: absolute;
-    top: 3rem;
+  padding: 0.5rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  color: white;
+  position: absolute;
+  top: 3rem;
 }
 .alert-danger {
-    color: #721c24;
-    background: #f8d7da;
+  color: #721c24;
+  background: #f8d7da;
 }
 .alert-success {
-    color: #155724;
-    background: #d4edda;
+  color: #155724;
+  background: #d4edda;
 }
 
 .postcode-form {
-    width: 100%;
-    display: inline;
+  width: 100%;
+  display: inline;
+  height: 200px;
 }
 
 .form-control {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 90%;
-    margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  height: 200px;
 }
 
 #postcode {
-    height: 1.25rem;
-    position: absolute;
-    top: 1rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 1rem;
 }
 
 .submit-btn {
-    position: absolute;
-    top: 1rem;
-    left: 20rem;
-    height: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 20rem;
+  height: 1.6rem;
 }
 
 .hide-container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .alert-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .alert-transform {
-    position: absolute;
-    top: 0.2rem;
-    left: 20rem;
-    display: grid;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100px;
-    height: 1.5rem;
-    font-size: 0.9rem;
-    border-radius: 0.25rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 20rem;
+  display: grid;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100px;
+  height: 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+}
+
+.input-button-container {
+  display: flex;
 }
