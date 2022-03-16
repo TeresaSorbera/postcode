@@ -1,78 +1,89 @@
-.section-center {
-  padding: 2rem;
-  height: 200px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.section-center {
+  height: 200px;
+  margin-top: 25px;
+}
+
 .alert {
-  padding: 0.5rem;
   height: 1.25rem;
   display: grid;
   align-items: center;
   text-align: center;
-  font-size: 0.9rem;
   border-radius: 0.25rem;
   text-transform: capitalize;
-  color: white;
-  position: absolute;
-  top: 3rem;
+  height: 30px;
+  width: 70vw;
+  margin: auto;
+  margin-top: 50px;
 }
+
 .alert-danger {
   color: #721c24;
   background: #f8d7da;
 }
+
 .alert-success {
   color: #155724;
   background: #d4edda;
 }
 
 .postcode-form {
-  width: 100%;
-  display: inline;
   height: 200px;
 }
 
 .form-control {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
   height: 200px;
 }
 
 #postcode {
-  height: 1.25rem;
+  height: 30px;
   position: absolute;
-  top: 1rem;
+  left: 8rem;
 }
 
 .submit-btn {
+  height: 30px;
+  padding: 2px;
   position: absolute;
-  top: 1rem;
-  left: 20rem;
-  height: 1.6rem;
+  left: 19rem;
 }
 
 .hide-container {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .alert-hidden {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .alert-transform {
-  position: absolute;
-  top: 0.2rem;
-  left: 20rem;
+  height: 1.25rem;
   display: grid;
   align-items: center;
-  padding: 0 1rem;
-  width: 100px;
-  height: 1.5rem;
-  font-size: 0.9rem;
+  text-align: center;
   border-radius: 0.25rem;
+  text-transform: capitalize;
+  height: 30px;
+  width: 70vw;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .input-button-container {
   display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
 }
